@@ -52,6 +52,7 @@ def process_message(update):
         shortened_url = shorten_url(text)
         if shortened_url:
             response_text = f"Shortened URL: {shortened_url}"
+            break
         else:
             response_text = "Invalid puks"
     else:
